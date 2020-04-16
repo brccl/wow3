@@ -1,0 +1,12 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Quit_Game : MonoBehaviour{
+    public void quitbutton()
+    {
+        Debug.Log("has quit");
+        Application.Quit();
+
+    }
+}
