@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ThirdPersonCameraControler : MonoBehaviour
+public class ThirdPersonCameraController : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
