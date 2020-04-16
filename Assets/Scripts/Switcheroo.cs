@@ -7,7 +7,7 @@ public class Switcheroo : MonoBehaviour
 {
     public void SceneSwitcher()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
 
     }
 }
