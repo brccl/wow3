@@ -6,11 +6,17 @@ public class ThirdPersonCharacterController : MonoBehaviour
 {
 
     public float Speed;
+    public float JumpHeight = 1f;
 
     // Update is called once per frame
     void Update()
     {
         PlayerMovement();
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            Jump();
+        }
     }
 
     void PlayerMovement()
@@ -21,6 +27,11 @@ public class ThirdPersonCharacterController : MonoBehaviour
         transform.Translate(playerMovement, Space.Self);
 
 
+    }
+
+    void Jump()
+    {
+        GetComponent<Rigidbody>().AddForce(0, 10, 0);
     }
 
 
